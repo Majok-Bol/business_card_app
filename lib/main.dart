@@ -10,13 +10,23 @@ class MyApp extends StatelessWidget{
       home: Scaffold(
         appBar: AppBar(title: Text('Business Card App',style: TextStyle(color: Colors.white,fontSize: 20),),centerTitle: true,backgroundColor: Colors.deepPurple,),
         body:Align(
+          alignment: Alignment.topLeft,
           child:Container(
     padding: EdgeInsets.all(10),
-    child: CircleAvatar(
+    width: 300,
+    height: 400,
+    color: Colors.grey,
+    child:Column(children: [
+      CircleAvatar(
+          radius: 30,
+          backgroundImage:AssetImage('assets/images/logo.jpeg')
+      ),
+      Text('Napoleon Hill'),
+      Text('Android | IOS developer'),
+      IconButton(onPressed:(){print("contact clicked");}, icon:Icon(Icons.phone)),
 
-              radius: 50,
-              backgroundImage:AssetImage('assets/images/logo.jpeg'),
-    ),
+
+    ],)
     ),
         ),
       ),
