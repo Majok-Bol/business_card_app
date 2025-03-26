@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget{
           alignment: Alignment.center,
           child:Container(
     padding: EdgeInsets.all(10),
-    width: 300,
-    height: 400,
-    color: Colors.grey,
+    width: 350,
+    height: 350,
+    color: Colors.teal,
     child:Column(
      mainAxisAlignment:MainAxisAlignment.center,
       children: [
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget{
           radius: 80,
           backgroundImage:AssetImage('assets/images/logo.jpeg')
       ),
+      SizedBox(height: 10,),
       SizedBox(child: Text('Napoleon Hill',style: TextStyle(fontSize: 15),),),
     SizedBox(height: 10,),
     SizedBox(child: Text('Android | IOS developer',style: TextStyle(fontSize: 15),),),
@@ -36,7 +37,7 @@ SizedBox(width: 8,),
  Row(
    mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          IconButton(onPressed:(){print("contact clicked");}, icon:Icon(Icons.email,color:Colors.blueAccent,)),
+          IconButton(onPressed:(){print("contact clicked");}, icon:Icon(Icons.email,color:Colors.black,)),
           Text('napoleon@gmail.com',style: TextStyle(fontSize: 15)),
         ],
 
