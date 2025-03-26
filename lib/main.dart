@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget{
       ),
       Text('Napoleon Hill'),
       Text('Android | IOS developer'),
-      IconButton(onPressed:(){print("contact clicked");}, icon:Icon(Icons.phone)),
-      IconButton(onPressed:(){print("contact clicked");}, icon:Icon(Icons.email)),
+      IconButton(onPressed:(){print("contact clicked");}, icon:Icon(Icons.phone,color: Colors.black,)),
+      IconButton(onPressed:(){print("contact clicked");}, icon:Icon(Icons.email,color:Colors.blueAccent,)),
 
     ],)
     ),
