@@ -4,7 +4,6 @@ void main(){
 }
 class MyApp extends StatelessWidget{
   @override
-
   Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -12,6 +11,9 @@ class MyApp extends StatelessWidget{
         appBar: AppBar(title: Text('Business Card App',style: TextStyle(color: Colors.white,fontSize: 20),),centerTitle: true,backgroundColor: Colors.deepPurple,),
         body: Stack(
           children: [
+            CircleAvatar(
+
+            )
 
           ],
         ),
