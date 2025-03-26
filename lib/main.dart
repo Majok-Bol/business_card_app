@@ -9,13 +9,15 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: Text('Business Card App',style: TextStyle(color: Colors.white,fontSize: 20),),centerTitle: true,backgroundColor: Colors.deepPurple,),
-        body: Stack(
-          children: [
-            CircleAvatar(
+        body:Align(
+          child:Container(
+    padding: EdgeInsets.all(10),
+    child: CircleAvatar(
 
-            )
-
-          ],
+              radius: 50,
+              backgroundImage:AssetImage('assets/images/logo.jpeg'),
+    ),
+    ),
         ),
       ),
     );
